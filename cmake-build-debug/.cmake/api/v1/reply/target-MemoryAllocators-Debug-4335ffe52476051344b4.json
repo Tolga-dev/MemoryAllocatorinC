@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 7,
 				"parent" : 0
 			}
 		]
@@ -38,10 +38,10 @@
 					"fragment" : "-g"
 				},
 				{
-					"fragment" : "-std=gnu2x"
+					"fragment" : "-std=gnu++2a"
 				}
 			],
-			"language" : "C",
+			"language" : "CXX",
 			"languageStandard" : 
 			{
 				"backtraces" : 
@@ -70,7 +70,7 @@
 				"role" : "flags"
 			}
 		],
-		"language" : "C"
+		"language" : "CXX"
 	},
 	"name" : "MemoryAllocators",
 	"nameOnDisk" : "MemoryAllocators",
@@ -94,7 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.c",
+			"path" : "main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

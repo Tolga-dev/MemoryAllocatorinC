@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.23)
-project(MemoryAllocators C)
+project(MemoryAllocators)
 
-set(CMAKE_C_STANDARD 23)
+set(CMAKE_CXX_STANDARD 23)
 
-add_executable(MemoryAllocators main.c)
+
+add_executable(MemoryAllocators main.cpp)
+
