@@ -1,5 +1,0 @@
-# ninja log v5
-1258	1428	1681937621954481860	MemoryAllocators	60bbc73ad09d90c2
-0	59	1681895628083934717	CMakeFiles/MemoryAllocators.dir/main.c.o	a2d2f21011ed66d9
-2	1257	1681937621786481151	CMakeFiles/MemoryAllocators.dir/main.cpp.o	b9eff6dc7702092e
-1	1041	1681896680459352384	CMakeFiles/MemoryAllocators.dir/DynamicMemoryAllocation.cpp.o	3dc031a2859c3513

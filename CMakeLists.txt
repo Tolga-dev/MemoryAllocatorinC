@@ -3,6 +3,14 @@ project(MemoryAllocators)
 
 set(CMAKE_CXX_STANDARD 23)
 
+find_package(benchmark REQUIRED)
 
-add_executable(MemoryAllocators main.cpp)
+if(benchmark_FOUND)
+    message("hello")
+ENDIF()
+
+add_executable(MemoryAllocators PoolAllocator.c)
+
+target_link_libraries(MemoryAllocators benchmark::benchmark)
+
 
