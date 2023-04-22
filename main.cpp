@@ -5,7 +5,7 @@ using namespace std;
 #define CHUNK_LIST_CAP 1024
 
 typedef struct {
-    char * start;
+    uintptr_t * start;
     size_t size;
 }Heap_Chunk;
 
@@ -13,6 +13,8 @@ typedef struct {
     size_t count;
     Heap_Chunk heapChunk[CHUNK_LIST_CAP];
 }Chunk_List;
+
+uintptr_t heap[HEAP_CAP] = {0};
 
 void Chunk_List_Dump(const Chunk_List* list)
 {
@@ -36,7 +38,7 @@ void Chunk_List_Remove(Chunk_List *list, size_t ptr)
 void Chunk_List_Insert(Chunk_List *list,void *ptr, size_t ind)
 {
     assert(list->count < CHUNK_LIST_CAP);
-    list->heapChunk[list->count].start = static_cast<char *>(ptr);
+    list->heapChunk[list->count].start = static_cast<uintptr_t*>(ptr);
     list->heapChunk[list->count].size = ind;
 
     for (size_t i = list->count;
@@ -107,7 +109,7 @@ int Chunk_List_Find(const Chunk_List *list, void *ptr)
        return -1;*/
 }
 
-char heap[HEAP_CAP] = {0};
+
 
 Chunk_List alloced_chunks = {0};
 Chunk_List freed_chunks = {
@@ -118,8 +120,9 @@ Chunk_List freed_chunks = {
 };
 Chunk_List tmp_chunk = {0};
 
-void *Heap_Alloc(size_t size)
+void *Heap_Alloc(size_t bytes)
 {
+    const size_t size = (bytes + sizeof(uintptr_t)-1)/sizeof(uintptr_t);
     if(size > 0)
     {
         Chunk_List_Merge(&tmp_chunk,&freed_chunks);
