@@ -1,21 +1,10 @@
 # ninja log v5
-43	112	1682190550460077680	MemoryAllocators	3d47384c915eaeb6
+36	106	1682191779375549961	MemoryAllocators	1b7a6b6ca54d69c6
 0	59	1681895628083934717	CMakeFiles/MemoryAllocators.dir/main.c.o	a2d2f21011ed66d9
 1	382	1682166977066227766	CMakeFiles/MemoryAllocators.dir/main.cpp.o	b9eff6dc7702092e
-0	59	1682190765482147885	build.ninja	d9c83da4478b3ead
+0	59	1682196563686387764	build.ninja	d9c83da4478b3ead
 0	43	1682190550392082263	CMakeFiles/MemoryAllocators.dir/StackAllocator.c.o	29e40d8071a784e9
 1	1041	1681896680459352384	CMakeFiles/MemoryAllocators.dir/DynamicMemoryAllocation.cpp.o	3dc031a2859c3513
 0	54	1682176685061195870	CMakeFiles/MemoryAllocators.dir/BumpAllocator.c.o	ac50f64f2717a2c9
-0	45	1682177429050731599	CMakeFiles/MemoryAllocators.dir/BuddyAllocator.c.o	b401129e13a8de7d
-0	50	1682191551214666042	CMakeFiles/MemoryAllocators.dir/PoolAllocator.c.o	af8ca8e31f0a21cf
-51	131	1682191551294666225	MemoryAllocators	1b7a6b6ca54d69c6
-0	46	1682191578062733635	CMakeFiles/MemoryAllocators.dir/PoolAllocator.c.o	af8ca8e31f0a21cf
-47	117	1682191578134733834	MemoryAllocators	1b7a6b6ca54d69c6
-0	46	1682191600062798007	CMakeFiles/MemoryAllocators.dir/PoolAllocator.c.o	af8ca8e31f0a21cf
-46	116	1682191600134798231	MemoryAllocators	1b7a6b6ca54d69c6
-0	37	1682191747355391946	CMakeFiles/MemoryAllocators.dir/PoolAllocator.c.o	af8ca8e31f0a21cf
-37	107	1682191747427392292	MemoryAllocators	1b7a6b6ca54d69c6
-0	35	1682191768467495212	CMakeFiles/MemoryAllocators.dir/PoolAllocator.c.o	af8ca8e31f0a21cf
-35	105	1682191768535495550	MemoryAllocators	1b7a6b6ca54d69c6
 0	35	1682191779307549617	CMakeFiles/MemoryAllocators.dir/PoolAllocator.c.o	af8ca8e31f0a21cf
-36	106	1682191779375549961	MemoryAllocators	1b7a6b6ca54d69c6
+0	45	1682177429050731599	CMakeFiles/MemoryAllocators.dir/BuddyAllocator.c.o	b401129e13a8de7d
