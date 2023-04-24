@@ -9,7 +9,7 @@ if(benchmark_FOUND)
     message("hello")
 ENDIF()
 
-add_executable(MemoryAllocators PoolAllocator.c)
+add_executable(MemoryAllocators Freelistallocator.c)
 
 target_link_libraries(MemoryAllocators benchmark::benchmark)
 
